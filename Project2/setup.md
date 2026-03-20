@@ -149,9 +149,11 @@ function handleRegister(event) {
       showAuthMessage(formatAuthError(err, "Cognito initialization failed."), true);
     });
 }
+```
 
-// otp handler
+## otp handler
 
+```javascript
 function handleVerifyOtp(event) {
   event.preventDefault();
 
@@ -191,8 +193,11 @@ function handleVerifyOtp(event) {
       showAuthMessage(formatAuthError(err, "Cognito initialization failed."), true);
     });
 }
+```
 
-// logout functionality
+## logout functionality
+
+```javascript
 
 function logout() {
   ensureCognitoReady()
@@ -216,3 +221,4 @@ function logout() {
       window.location.assign("/login");
     });
 }
+```
