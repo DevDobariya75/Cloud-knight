@@ -8,7 +8,7 @@
 
 ### A Comprehensive Hands-On AWS Workshop Experience
 
-An immersive learning event exploring AWS cloud services through three progressive, real-world projects. From static website hosting to serverless APIs, master the fundamentals of modern cloud computing.
+An immersive learning event exploring AWS cloud services through progressive, real-world projects. From static website hosting to serverless APIs, master the fundamentals of modern cloud computing any many more .
 
 [![AWS](https://img.shields.io/badge/AWS-Cloud%20Services-FF9900?style=for-the-badge&logo=amazon-aws)](https://aws.amazon.com)
 [![Workshop](https://img.shields.io/badge/Event-Live%20Hands--On-blue?style=for-the-badge)](/)
