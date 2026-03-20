@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+npm-debug.log
+npm-error.log
+yarn-error.log
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# AWS and credentials
+aws-credentials.json
+.aws/
+
+# Build and dist
+dist/
+build/

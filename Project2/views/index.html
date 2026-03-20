@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>👻 Haunted Cloud App</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <a href="/" class="nav-brand">👻 HauntedCloud</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Main Content ── -->
+  <main class="page">
+    <div class="card" style="max-width: 620px;">
+
+      <!-- Floating ghost illustration -->
+      <span class="ghost-float">👻</span>
+
+      <!-- Title -->
+      <h1 class="page-title" style="color: var(--purple-light);">
+        Welcome to Haunted Cloud App
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="page-subtitle">
+        Your data is safe... <span class="highlight">or is it? 🤔</span><br/>
+        This app has <strong>zero authentication</strong> right now.<br/>
+        Your mission: make it secure with <span class="purple">AWS Cognito</span>.
+      </p>
+
+      <!-- Spooky images row -->
+      <div style="display:flex; gap:16px; justify-content:center; margin-bottom:28px; flex-wrap:wrap;">
+        <img
+          src="https://media.giphy.com/media/3o7aTskHEUdgCQAXde/giphy.gif"
+          alt="Spooky ghost"
+          style="width:130px; height:100px; object-fit:cover; border-radius:12px; border:2px solid var(--border);"
+        />
+        <img
+          src="https://media.giphy.com/media/077i6AULCXc0FKTj9s/giphy.gif"
+          alt="Hacker cat"
+          style="width:130px; height:100px; object-fit:cover; border-radius:12px; border:2px solid var(--border);"
+        />
+        <img
+          src="https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif"
+          alt="Spooky loading"
+          style="width:130px; height:100px; object-fit:cover; border-radius:12px; border:2px solid var(--border);"
+        />
+      </div>
+
+      <!-- Info box -->
+      <div class="info-box" style="margin-top:32px;">
+        <h3>🗺️ Project Roadmap</h3>
+        <ul>
+          <li>Explore this unprotected app</li>
+          <li>Set up an AWS Cognito User Pool</li>
+          <li>Connect Cognito to Login & Register</li>
+          <li>Protect the /about route</li>
+          <li>Celebrate 🎉</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    👻 Haunted Cloud App &mdash; AWS Workshop &mdash; Built for brave developers
+  </footer>
+
+  <script src="/js/auth.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

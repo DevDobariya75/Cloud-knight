@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📝 Register - Haunted Cloud App</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <a href="/" class="nav-brand">👻 HauntedCloud</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Main Content ── -->
+  <main class="page">
+    <div class="card">
+
+      <!-- Ghost icon -->
+      <span class="ghost-float" style="font-size:3.5rem;">👻</span>
+
+      <!-- Title -->
+      <h1 class="page-title" style="font-size:2.2rem; color: var(--orange-light);">
+        Join the Haunting!
+      </h1>
+      <p class="page-subtitle">
+        <strong>Protect me… hackers are watching 😱</strong><br/>
+        <span style="font-size:0.85rem; color:var(--text-muted); margin-top: 8px; display: block;">Create your account to secure the cloud...</span>
+      </p>
+
+      <!-- ── REGISTER FORM ── -->
+      <form onsubmit="handleRegister(event)">
+        <div class="form-group">
+          <label for="email">📧 Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ghost@haunted.cloud"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">🔑 Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Min 8 characters"
+            required
+            minlength="8"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-orange" style="width:100%; margin-top:8px;">
+          Create Account →
+        </button>
+
+      </form>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    👻 Haunted Cloud App &mdash; AWS Workshop &mdash; Built for brave developers
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/auth.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

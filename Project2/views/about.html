@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Haunted Cloud App</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <a href="/" class="nav-brand">👻 HauntedCloud</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Main Content ── -->
+  <main class="page">
+    <div class="card" style="max-width: 600px;">
+      
+      <!-- Title -->
+      <h1 class="page-title" style="color: #fca5a5;">
+        🔒 Protect Me!
+      </h1>
+
+      <!-- Description -->
+      <p class="page-subtitle">
+        This page is currently <span class="highlight">totally unprotected</span>...
+        <br/>hackers are watching 👀
+      </p>
+
+      <!-- Spooky hacker images -->
+      <div style="display:flex; gap:16px; justify-content:center; margin-bottom:24px; flex-wrap:wrap;">
+        <div style="text-align:center;">
+          <img
+            src="https://media.giphy.com/media/YQitE4YNQNahy/giphy.gif"
+            alt="Cartoon ghost"
+            style="width:140px; height:110px; object-fit:cover; border-radius:12px; border:2px solid rgba(239,68,68,0.4);"
+          />
+          <p style="font-size:0.75rem; color:var(--text-muted); margin-top:6px;">🕯️ Haunted data</p>
+        </div>
+        <div style="text-align:center;">
+          <img
+            src="https://media.giphy.com/media/zXmbOaTpbY6mA/giphy.gif"
+            alt="Hacker at keyboard"
+            style="width:140px; height:110px; object-fit:cover; border-radius:12px; border:2px solid rgba(239,68,68,0.4);"
+          />
+          <p style="font-size:0.75rem; color:var(--text-muted); margin-top:6px;">💻 Script kiddie</p>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- Workshop callout box -->
+      <div class="info-box" style="background: rgba(239,68,68,0.06); border-color: rgba(239,68,68,0.25); margin-bottom:24px;">
+        <h3 style="color:#fca5a5;">🎯 Your Mission, Should You Accept It:</h3>
+        <ul>
+          <li>Create a Cognito User Pool on AWS</li>
+          <li>Add Login & Register with real auth</li>
+          <li>Add a session check to THIS page</li>
+          <li>Redirect guests to /login</li>
+          <li>Make the hackers cry 😭</li>
+        </ul>
+      </div>
+
+      <p style="color: var(--text-muted); font-size:0.95rem; line-height:1.7;"> 
+        <strong style="color:var(--orange-light);">AWS Cognito</strong>!<br/>
+        Right now, any random internet ghost 👻 can visit this page.<br/>
+        That's... not ideal. Let's fix it together!
+      </p>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    👻 Haunted Cloud App &mdash; AWS Workshop &mdash; Built for brave developers
+  </footer>
+
+  <script src="/js/auth.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔐 Login - Haunted Cloud App</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <a href="/" class="nav-brand">👻 HauntedCloud</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Main Content ── -->
+  <main class="page">
+    <div class="card">
+
+      <!-- Ghost icon -->
+      <span class="ghost-float" style="font-size:3.5rem;">🔐</span>
+
+      <!-- Title -->
+      <h1 class="page-title" style="font-size:2.2rem; color: var(--purple-light);">
+        Welcome Back!
+      </h1>
+      <p class="page-subtitle">
+        <strong>Enter if you dare 👀</strong><br/>
+        <span style="font-size:0.85rem; color:var(--text-muted); margin-top: 8px; display: block;">Sign in to access the haunted cloud...</span>
+      </p>
+
+      <!-- ── LOGIN FORM ── -->
+      <form onsubmit="handleLogin(event)">
+
+        <div class="form-group">
+          <label for="email">📧 Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ghost@haunted.cloud"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">🔑 Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="••••••••"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-top:8px;">
+          Login →
+        </button>
+
+      </form>
+
+      <!-- Divider -->
+      <div class="divider-text" style="margin-top:24px;">Don't have an account?</div>
+
+      <!-- Link to register -->
+      <a href="/register" class="btn btn-outline" style="width:100%;">
+        📝 Create Account
+      </a>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    👻 Haunted Cloud App &mdash; AWS Workshop &mdash; Built for brave developers
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/auth.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
