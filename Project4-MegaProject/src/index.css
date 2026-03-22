@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-size: 18px;
+  }
+
+  button:focus-visible,
+  input:focus-visible {
+    @apply outline-none ring-4 ring-blue-200;
+  }
+}
